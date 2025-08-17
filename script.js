@@ -1,3 +1,6 @@
+
+
+
 // ==UserScript==
 // @name         Schooly, Schoology to Discord announcements
 // @namespace    http://tampermonkey.net/
@@ -5,7 +8,9 @@
 // @description  Sends Schoology updates to a Discord channel using a bot.
 // @match        https://app.schoology.com/*
 // @grant        none
+// @icon         https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxPhAt0fyjQQ29x606v_Xt-5QPchBgT8-Xug&s
 // ==/UserScript==
+
 
 (function(){
     'use strict';
@@ -47,6 +52,7 @@ function checkForUpdates(){
             const text = update.innerText.trim();
         if(text){
             sendMsgToDiscord(text)
+            alert('Posted to Discord!')
         }
         })
         update.parentElement.appendChild(btn)

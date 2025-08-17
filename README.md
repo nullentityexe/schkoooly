@@ -1,3 +1,6 @@
+# Schkoooly
+Schkoooly is a tampermonkey script that allows you to post schoology updates to a discord webhook of your choice, perfect for school communities that have both discord & schoology. This allows users who have the discord webhook url, to select and send updates from the schoology page to the discord server. Since the script is client side, there's no need for admin permissions or complicated school permissions. Simply download, and click on an update to send!
+
 To use, download Tampermonkey...
 Create a new script, and paste ALL the text in script.js into TamperMonkey
 
